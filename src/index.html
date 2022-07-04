@@ -2,13 +2,45 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Mensajes secretos</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
+    <header id="root">
+      <h1>Mensajes secretos</h1>
+    </header>
+    <hr>
+    <main>
+      <h2>Hola ¿Deseas crear un mensaje secreto o descifrarlo?
+    </h2>
+      <p>
+        Ingresa tu mensaje en el siguiente recuadro y luego haz click en la opción que deseas.
+      </p>
+      <p><!--sección para ingresar mensaje: cifrar/descifrar-->
+        <textarea id="mensaje" cols="50" rows="10" placeholder="Ingresa tu mensaje aquí"></textarea> 
+      </p>
+      <p><!--offset-->
+        <input id="offset" type="range" value="3" min="3" max="13" oninput="this.nextElementSibling.value = this.value"> 
+        <output>3</output><br>
+        <i><small>Elige el nivel de seguridad de tu mensaje</small></i>
+      </p>
+
+        <button id="cifrar"> 
+          Crear mensaje secreto
+        </button>
+        <button id="descifrar">
+          Descifrar mensaje secreto
+        </button>
+
+      <p><!--resultado del mensaje: cifrado/descifrado-->
+        <textarea id="resultado" cols="50" rows="10"></textarea> 
+      </p>
+                    
+    </main><br>
+    <hr/><br>
+  <footer>
+    Todos los derechos reservados
+  </footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>
