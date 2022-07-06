@@ -1,9 +1,9 @@
 const cipher = {
-  
-  encode: function (inputMensaje, inputOffset) {
+  //Método de cifrado
+  encode: function (inputOffset, inputMensaje){
     let codeAscii = 0; //¿puede ir comillas y luego colocar un parseInt en la línea 13 y 19 antes de la fórmula?
     let mensajeEncoded = '';
-    
+    console.log(inputMensaje);
     //For es un bucle que repetirá todo lo que esté entre las {}
     for (let index = 0; index < inputMensaje.length; index++) {
       let ascii = inputMensaje[index].charCodeAt(); //obtiene el número de cada letra
@@ -25,7 +25,9 @@ const cipher = {
       }
     }
     return mensajeEncoded;
-  }
+  },
+
+    
 };
 
 export default cipher;
