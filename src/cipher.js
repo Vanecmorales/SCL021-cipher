@@ -1,33 +1,31 @@
 const cipher = {
   
   encode: function (inputMensaje, inputOffset) {
-    if (inputOffset === 'null' || inputMensaje.length === 0 || inputOffset === 0) {
-      throw new TypeError();
-    }
-    let codeChar = 0;
+    let codeAscii = 0; //¿puede ir comillas y luego colocar un parseInt en la línea 13 y 19 antes de la fórmula?
     let mensajeEncoded = '';
+    
+    //For es un bucle que repetirá todo lo que esté entre las {}
     for (let index = 0; index < inputMensaje.length; index++) {
+      let ascii = inputMensaje[index].charCodeAt(); //obtiene el número de cada letra
+      
+      //Para mayúsculas
+      if (ascii >= 65 && ascii <= 90) {
+        codeAscii = ((ascii - 65 + inputOffset) % 26) + 65;
+        mensajeEncoded += String.fromCharCode(codeAscii);
+      } 
+      
+      // Para minúsculas
+      else if (ascii >= 97 && ascii <= 122) {
+        codeAscii = (((ascii - 97 + inputOffset) % 26) + 97);
+        mensajeEncoded += String.fromCharCode(codeAscii);
+      } 
 
-      let char = parseInt(inputMensaje.charCodeAt(index));
-
-      if (char >= 65 && char <= 90) {
-
-        codeChar = parseInt(((char - 65 + inputOffset) % 26) + 65);
-
-        mensajeEncoded += String.fromCharCode(codeChar);
-
-      } else if (char >= 97 && char <= 122) {
-        codeChar = parseInt(((char - 97 + inputOffset) % 26) + 97);
-
-        mensajeEncoded += String.fromCharCode(codeChar);
-      } else {
-
-        mensajeEncoded += String.fromCharCode(char);
-
+      else {
+        mensajeEncoded += String.fromCharCode(ascii);
       }
     }
-
     return mensajeEncoded;
   }
 };
+
 export default cipher;
