@@ -11,32 +11,52 @@
     </header>
     <hr>
     <main>
-      <h2>Bienvenido/a 
-    </h2>
-      <p>
-        Puedes utilizar esta herramienta para crear mensajes secretos que desees compartir con tu persona de confianza.<br>
-        Ingresa tu mensaje en el siguiente recuadro y luego haz click en la opción que deseas utilizar.
-      </p>
-      <p><!--sección para ingresar mensaje: cifrar/descifrar-->
-        <textarea id="mensaje" cols="50" rows="10" placeholder="Ingresa tu mensaje aquí"></textarea> 
-      </p>
-      <p><!--offset-->
-        <input id="offset" type="range" value="3" min="3" max="13" oninput="this.nextElementSibling.value = this.value"> 
-        <output>3</output><br>
-        <i><small>Elige el nivel de seguridad de tu mensaje</small></i>
-      </p>
+      <!--Sección 1: Títulos-->
+      
+        <h2>Bienvenido/a</h2>
+        <h3>Esta herramienta te permite crear mensajes secretos para que lo compartas con tu persona de confianza.</h3>
+      
+      
+      <!--Sección 2: instrucciones, mensaje, botones-->
+      <section id="sección"> 
+          <article id="instrucciones">
+            <p><b>Para comenzar considera que:</b></p>
+            <ul>
+              <li>Puede utilizar mayúsculas, minúsculas y números</li>
+              <li>La longitud del texto ¡la decides tú!😊</li>
+              <li>Finalmente, elige el nivel de seguridad 🔐</li>
+            </ul>
+          </article>
+          <article id="texto-inicial">
+            <p>
+              Ingresa tu mensaje en el siguiente recuadro y luego haz click en la opción que deseas utilizar.
+            </p>
 
-        <button id="cifrar">Crear mensaje secreto</button>
-        <button id="descifrar">Descifrar mensaje secreto</button>
+            <textarea id="mensaje" cols="50" rows="10" placeholder="Ingresa tu mensaje aquí"></textarea><br> <!--sección para ingresar mensaje: cifrar/descifrar-->
 
-      <p><!--resultado del mensaje: cifrado/descifrado-->
-        <textarea id="resultado" cols="50" rows="10"></textarea> 
-      </p>
-                    
-    </main><br>
-    <hr/><br>
+            <!--offset-->
+            <input id="offset" type="range" value="3" min="3" max="20" oninput="this.nextElementSibling.value = this.value"> 
+          <output>3</output><br>
+          <i><small>Elige el nivel de seguridad de tu mensaje</small></i>                 
+  
+          <!--Botones-->
+          <p>
+            <button id="cifrar" class="btn">Crear mensaje secreto</button>
+            <button id="descifrar" class="btn">Descifrar mensaje secreto</button>
+          </p>
+          </article>
+
+          <article id="texto-final">
+            <textarea id="resultado" cols="50" rows="10"></textarea><!--resultado del mensaje: cifrado/descifrado--><br><br>
+            <button id="borrar" class="btn">Borrar</button>
+            <button id="copiar" class="btn">Copiar</button>
+          </article>
+        </section>
+
+    </main>
+    <hr/>
   <footer>
-    Todos los derechos reservados
+    <i>Cipher - Vanessa Castro 2022</i>
   </footer>
     <script src="index.js" type="module"></script>
   </body>

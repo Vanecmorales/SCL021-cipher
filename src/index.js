@@ -9,7 +9,6 @@ function mostrarCifrado(){
     let inputOffset = parseInt(document.getElementById("offset").value); // parseInt hace que el valor del desplazamiento se considere como un número y no un string
     let inputMensaje = document.getElementById("mensaje").value;
     let mensajeEncode = cipher.encode(inputOffset, inputMensaje);
-    console.log(mensajeEncode);
     textFinal.value = mensajeEncode // elemento.value es lo que permite que se muestre el valor en un input o textarea, no funciona el innerHTML
 }
 
@@ -19,16 +18,5 @@ function mostrarDescifrado(){
     let inputOffset = parseInt(document.getElementById("offset").value);
     let inputMensaje = document.getElementById("mensaje").value;
     let mensajeDecode = cipher.decode(inputOffset, inputMensaje);
-    console.log(mensajeDecode);
     textFinal.value = mensajeDecode
 }
-
-
-
-
-
-
-
-    
-//console.log(cipher);
-//console.log(cipher.encode);
