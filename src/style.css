@@ -1,11 +1,11 @@
 body{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(57.4deg, rgb(249, 206, 183) 4.6%, rgb(234, 174, 202) 26%, rgb(210, 182, 226) 49.1%, rgb(173, 209, 242) 86.5%);
     
 }
-header{
+header, h2, h3{
     text-align: center;
 }
-
 
 section{
     display: flex;
@@ -36,13 +36,11 @@ article{
 }
 
 input{
-    -webkit-appearance: none;
+    appearance: none;
     border-radius: 10px;
     background-color: #E7DCE7;
 
 }
-
-
 
 .btn{
     border: 2px solid #CCBBCC;

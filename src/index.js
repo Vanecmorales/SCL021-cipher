@@ -2,6 +2,8 @@ import cipher from './cipher.js';
 let btCifrar = document.getElementById("cifrar");
 let btDescifrar = document.getElementById("descifrar");
 let textFinal = document.getElementById("resultado");
+let btCopiar = document.getElementById("copiar");
+let btBorrar = document.getElementById("borrar");
 
 btCifrar.addEventListener('click', mostrarCifrado)
 
@@ -20,3 +22,21 @@ function mostrarDescifrado(){
     let mensajeDecode = cipher.decode(inputOffset, inputMensaje);
     textFinal.value = mensajeDecode
 }
+
+btCopiar.addEventListener('click', copiarTexto)
+
+function copiarTexto(){
+    textFinal.select();
+    textFinal.setSelectionRange(0, 99999);
+    document.execCommand('copy');
+    alert("¡Copiado!");
+    
+}
+
+//btBorrar.addEventListener('click', borrarTexto)
+
+// function borrarTexto(){
+//     textFinal.removeAttributeNS();
+//     alert("¡Borrado!");
+
+// }
