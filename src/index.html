@@ -31,14 +31,15 @@
               Ingresa tu mensaje en el siguiente recuadro y luego haz click en la opción que deseas utilizar.
             </p>
 
-            <textarea id="mensaje" cols="50" rows="10" placeholder="Ingresa tu mensaje aquí"></textarea><br> <!--sección para ingresar mensaje: cifrar/descifrar-->
+            <!--área para ingresar mensaje: cifrar/descifrar-->
+            <textarea id="mensaje" cols="50" rows="10" placeholder="Ingresa tu mensaje aquí"></textarea><br>
 
-            <!--offset-->
+            <!--Desplazamiento-->
             <input id="offset" type="range" value="3" min="3" max="20" oninput="this.nextElementSibling.value = this.value"> 
           <output>3</output><br>
           <i><small>Elige el nivel de seguridad de tu mensaje</small></i>                 
   
-          <!--Botones-->
+          <!--Botones cifrar/descifrar-->
           <p>
             <button id="cifrar" class="btn">Crear mensaje secreto</button>
             <button id="descifrar" class="btn">Descifrar mensaje secreto</button>
@@ -46,13 +47,17 @@
           </article>
 
           <article id="texto-final">
+            <!--Se crea el form para que pueda ejecutarse la funcionalidad de reset en el botón de borrar-->
+            <form>
             <p>Mira tu mensaje aquí 👇</p><br>
-            <textarea id="resultado" cols="50" rows="10"></textarea><br><br><!--resultado del mensaje: cifrado/descifrado-->
-            <button id="borrar" class="btn" type="reset">Borrar</button>
+
+            <!--resultado del mensaje: cifrado/descifrado-->
+            <textarea id="resultado" cols="50" rows="10"></textarea><br><br>
+            <button id="borrar" class="btn" type="reset">Borrar</button>.
             <button id="copiar" class="btn">Copiar</button>
+          </form>
           </article>
         </section>
-
     </main>
     <hr/><br>
   <footer>

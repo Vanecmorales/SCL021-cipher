@@ -4,7 +4,7 @@ const cipher = {//Objeto
     let codeAscii = 0;
     let mensajeEncode = '';
     
-    //For es un bucle que repetirá todo lo que esté entre las {} hasta la línea 26. La sintaxis: for (inicialización; condición; actualización){}
+    //For es un bucle que repetirá todo lo que esté entre las {} hasta la línea 32. La sintaxis: for (inicialización; condición; actualización){}
     for (let index = 0; index < inputMensaje.length; index++) {
       let ascii = inputMensaje.charCodeAt(index); //chartCodeAt() obtiene el valor ascii de cada letra
       

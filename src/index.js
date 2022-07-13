@@ -3,7 +3,7 @@ let btCifrar = document.getElementById("cifrar");
 let btDescifrar = document.getElementById("descifrar");
 let textFinal = document.getElementById("resultado");
 let btCopiar = document.getElementById("copiar");
-let btBorrar = document.getElementById("borrar");
+
 
 btCifrar.addEventListener('click', mostrarCifrado)
 
@@ -32,11 +32,3 @@ function copiarTexto(){
     alert("¡Copiado!");
     
 }
-
-//btBorrar.addEventListener('click', borrarTexto)
-
-// function borrarTexto(){
-//     textFinal.removeAttributeNS();
-//     alert("¡Borrado!");
-
-// }
