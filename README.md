@@ -1,5 +1,3 @@
-# SCL021-cipher
-Repositorio primer proyecto para cohort SCL021 de Santiago de Chile 
 # Cifrado César
 
 ## 1. Proyecto
@@ -34,3 +32,6 @@ Instrucciones:
 Finalmente, la última versión del producto varió en relación al prototipo inicial en la distribución de los elementos y paleta de colores, sin embargo fueron incorporadas todas las funcionalidades consideradas al inicio.
 
 ![](https://github.com/Vanecmorales/SCL021-cipher/blob/main/src/img/prototipo%20final.jpg)
+
+#### SCL021-cipher
+Repositorio primer proyecto para cohort SCL021 de Santiago de Chile 
