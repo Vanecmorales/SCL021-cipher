@@ -24,6 +24,9 @@ Sección de resultado: Se refiere al área donde finalmente se mostrará el mens
 
 ## Prototipo inicial
 
-Finalmente el diseño final varió al prototipo en distribución y paleta de colores, sin embargo fueron incorporadas todas las funcionalidades consideradas al inicio.
+![](https://github.com/Vanecmorales/SCL021-cipher/blob/main/src/img/prototipo%20inicial.jpg)
 
 ## Prototipo final
+Finalmente el diseño final varió al prototipo en distribución y paleta de colores, sin embargo fueron incorporadas todas las funcionalidades consideradas al inicio.
+
+![](https://github.com/Vanecmorales/SCL021-cipher/blob/main/src/img/prototipo%20final.jpg)

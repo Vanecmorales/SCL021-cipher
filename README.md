@@ -21,7 +21,7 @@ es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio
 César lo usaba para enviar órdenes secretas a sus generales en los campos de
 batalla.
 
-![caeser-cipher](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Caesar3.svg/2000px-Caesar3.svg.png)
+git add
 
 El cifrado césar es una de las técnicas más simples para cifrar un mensaje. Es
 un tipo de cifrado por sustitución, es decir que cada letra del texto original
