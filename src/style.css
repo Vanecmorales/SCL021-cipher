@@ -53,7 +53,7 @@ input{
     
     
 }
-.btn:hover{
+.btn:hover{ /*selector pseudoclase: solo aplica al elemento cuando el puntero está sobre él*/
     color: black;
     background-color: transparent;
 }
